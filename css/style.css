@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Sofia";
+}
+
+body{
+    background-color: rgba(100, 0 , 0);
+}
+
+a{
+    color: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
+}
+
+#main_back {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    perspective: 5000px;
+
+    z-index: 0;
+}
+
+#main_back img {
+    position: absolute;
+    top: -8%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+}
+
+#main_back p {
+
+    position: relative;
+    top: 7rem;
+    left:5rem;
+    line-height: 2rem;
+    color: white;
+    z-index: 1;
+    font-size: 3vw;
+    line-height: 3vw;
+}
+
+.top_menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background: rgba(100, 0 , 0, 0.6);
+    width: 100%;
+    height: 3rem;
+    transition: .3s;
+    z-index: 5;
+}
+.menu_down{
+    position: fixed;
+    top: 3rem;
+    background: rgba(100, 0, 0, 0.6);
+    width: 100%;
+    height: 0rem;
+    transition: .3s;
+    z-index: 4;
+}
+
+.button, .top_menu_icon {
+    color: wheat;
+    width: 100vw;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.top_menu_icon{
+    text-align: left;
+}
+.top_menu_icon img{
+    width: 3rem;
+}
+
+.button:hover{
+    color: white;
+}
+
+.button li:hover{
+
+    color: orange;
+}
+
+.button ul li{
+    width: 100%;
+    height: 0;
+    transition: .2s;
+    opacity: 0;
+    transform: translateY(-65px);
+}
+
+
+
+#test{
+    position: relative;
+}
+
+.button:hover li{
+    height: 65px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#intro1{
+    position: relative;
+    height: 150vh;
+    width: 100vw;
+    opacity: 0;
+    transition: .5s;
+}
+
+#intro1_p1, #intro1_p2{
+    position: absolute;
+    height: 60vh;
+    width: 20vw;
+    border-radius: 30px;
+}
+
+#intro1_p1{
+    top: 10vh;
+    left: 20vw;
+}
+
+#intro1_p2{
+    top: 60vh;
+
+    left: 60vw;
+}
+
+#intro1_text1, #intro1_text2{
+    position: absolute;
+    height: 50vh;
+    width: 60vw;
+    color: white;
+}
+
+#intro1_text1{
+    top: 0vh;
+    left: 40vw;
+}
+#intro1_text2{
+    top: 70vh;
+    left: 0vw;
+}
+
+#intro1_text1 h1{
+    position: relative;
+    display: block;
+    top: 2rem;
+    left: 5rem;
+}
+
+#intro1_text1 p{
+    position: relative;
+    display: block;
+    top: 3rem;
+    left: 5rem;
+}
+
+#intro1_text2 h1{
+    position: relative;
+    display: block;
+    top: 2rem;
+    left: 30rem;
+}
+
+#intro1_text2 p{
+    position: relative;
+    display: block;
+    top: 3rem;
+    left: 30rem;
+}
+
+.pagebody{
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+
+    overflow: hidden;
+}
+.pagebody .title{
+    display: block;
+    position: relative;
+    top: 5rem;
+    width: 100vw;
+    height: 25vh;
+    text-align: left;
+    font-size: 6vw;
+    color: white;
+
+
+}
+
+.pagebody .pageshell{
+    position: fixed;
+    top: 35vh;
+    width: 30vw;
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.pagebody .pageshell ul{
+    width: 10rem;
+    justify-content: center;
+
+}
+
+.pagebody .pageshell ul li{
+    text-align: center;
+    margin: 3rem;
+    transition: .2s;
+    color: white;
+}
+
+.pagebody .pageshell ul li:hover{
+    align-content: center;
+    font-size: 2rem;
+    color: wheat;
+}
+
+.pagebody .pagecontent{
+    position: relative;
+    left: 35vw;
+    top: 8rem;
+    border-radius: 30px;
+    height: 400vh;
+    width: 50vw;
+    line-height: 9rem;
+    align-content: center;
+
+
+    background-color: rgb(248, 176, 176);
+}
+
+.pagecontent{
+    display: block;
+    justify-content: center;
+}
+
+.pagecontent .blank{
+    float: left;
+    width: inherit;
+    height: 3rem;
+
+
+}
+.pagecontent div h1{
+    line-height: 10rem;
+}
+
+.pagecontent div{
+    line-height: 1rem;
+    margin: auto;
+
+}
+
+
+
+
+
+
+
